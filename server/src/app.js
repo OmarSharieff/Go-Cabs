@@ -9,5 +9,8 @@ app.use(cors({
     optionsSuccessStatus: 200
 }))
 
+import sampleRouter from "./routes/sample.routes.js"
+
+app.use('/', sampleRouter)
 
 export {app}
